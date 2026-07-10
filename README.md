@@ -13,7 +13,7 @@ Estado: En desarrollo
 
 # Índice
 
-00. [Ir a Introducción](#introducción)
+00. [Introducción](#introducción)
 01. Sintaxis Minecraft 1.21.6
 02. Componentes de Ítems
 03. Atributos de Entidades
