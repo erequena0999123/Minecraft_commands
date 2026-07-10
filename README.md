@@ -18,7 +18,7 @@ Estado: En desarrollo
 02. [Componentes de Ítems](#minecraftenchantments)
 03. [Atributos de Entidades](#minecraftmax_health)
 04. [Equipamiento](#mainhand)
-05. [IA y Comportamientos](follow_range)
+05. [IA y Comportamientos](#follow-range)
 06. [Sistema de Bosses](#boss-001)
 07. Sistema de Superpoderes
 08. Sistema de Objetos Especiales
