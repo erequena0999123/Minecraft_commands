@@ -20,7 +20,7 @@ Estado: En desarrollo
 04. [Equipamiento](#mainhand)
 05. [IA y Comportamientos](#follow-range)
 06. [Sistema de Bosses](examples/bosses)
-07. [Sistema de Superpoderes](#power-001)
+07. [Sistema de Superpoderes](examples/superpowers)
 08. [Sistema de Objetos Especiales](#legendarios)
 09. [Sistema de Partículas](#soul-fire)
 10. [Sistema de Sonidos](#enderman)
