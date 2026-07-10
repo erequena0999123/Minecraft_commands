@@ -19,7 +19,7 @@ Estado: En desarrollo
 03. [Atributos de Entidades](#minecraftmax_health)
 04. [Equipamiento](#mainhand)
 05. [IA y Comportamientos](#follow-range)
-06. [Sistema de Bosses](examples/bosses/boss_001)
+06. [Sistema de Bosses](examples/bosses/boss_001.md)
 07. [Sistema de Superpoderes](#power-001)
 08. [Sistema de Objetos Especiales](#legendarios)
 09. [Sistema de Partículas](#soul-fire)
