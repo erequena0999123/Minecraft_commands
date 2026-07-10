@@ -30,7 +30,7 @@ Estado: En desarrollo
 14. [Funciones Útiles](#eliminar-entidades)
 15. [Laboratorio](#lab-001)
 16. [Recursos Externos](#documentación)
-99. [Changelog](#v0.0.1)
+99. [Changelog](#v001)
 
 
 
