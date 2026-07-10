@@ -49,3 +49,14 @@ Objetivos
 - Mantener compatibilidad.
 - Facilitar mantenimiento.
 - Crear una base reutilizable.
+
+
+# Componentes
+
+Desde 1.20.5 los Items utilizan Data Components.
+
+Ejemplo
+
+minecraft:diamond_sword[
+minecraft:enchantments={sharpness:5}
+]
