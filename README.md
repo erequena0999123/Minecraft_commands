@@ -14,12 +14,12 @@ Estado: En desarrollo
 # Índice
 
 00. [Introducción](#introducción)
-01. [Sintaxis Minecraft 1.21.6](#minecraftenchantments)
-02. Componentes de Ítems
-03. Atributos de Entidades
-04. Equipamiento
-05. IA y Comportamientos
-06. Sistema de Bosses
+01. [Sintaxis Minecraft 1.21.6](#componentes)
+02. [Componentes de Ítems](#minecraftenchantments)
+03. [Atributos de Entidades](#minecraftmax_health)
+04. [Equipamiento](#mainhand)
+05. [IA y Comportamientos](follow-range)
+06. [Sistema de Bosses](#boss-001)
 07. Sistema de Superpoderes
 08. Sistema de Objetos Especiales
 09. Sistema de Partículas
