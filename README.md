@@ -14,7 +14,7 @@ Estado: En desarrollo
 # Índice
 
 00. [Introducción](#introducción)
-01. Sintaxis Minecraft 1.21.6
+01. [Sintaxis Minecraft 1.21.6](#minecraft:enchantments)
 02. Componentes de Ítems
 03. Atributos de Entidades
 04. Equipamiento
