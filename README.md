@@ -19,7 +19,7 @@ Estado: En desarrollo
 03. [Atributos de Entidades](#minecraftmax_health)
 04. [Equipamiento](#mainhand)
 05. [IA y Comportamientos](#follow-range)
-06. [Sistema de Bosses](#boss-001)
+06. [Sistema de Bosses](examples/bosses/boss_001)
 07. [Sistema de Superpoderes](#power-001)
 08. [Sistema de Objetos Especiales](#legendarios)
 09. [Sistema de Partículas](#soul-fire)
@@ -190,87 +190,6 @@ Resultado
 ...
 
 
-# BOSS-001
-
-Nombre
-
-Caballero Oscuro
-
-Entidad
-
-Zombie
-
-Estado
-
-En desarrollo
-
----
-
-Vida
-
-150
-
----
-
-Escala
-
-2
-
----
-
-Daño
-
-18
-
----
-
-Velocidad
-
-0.45
-
----
-
-Armadura
-
-20
-
----
-
-Arma
-
-Netherite Sword
-
----
-
-IA
-
-Persigue jugadores.
-
-Rompe puertas.
-
----
-
-Partículas
-
-Soul Fire
-
----
-
-Sonidos
-
-...
-
----
-
-Comandos
-
-...
-
----
-
-Notas
-
-...
 
 
 # POWER-001
