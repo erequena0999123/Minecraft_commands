@@ -60,3 +60,248 @@ Ejemplo
 minecraft:diamond_sword[
 minecraft:enchantments={sharpness:5}
 ]
+
+
+# minecraft:enchantments
+
+Estado
+
+✔ Verificado
+
+Comando
+
+/give @p minecraft:netherite_sword[
+minecraft:enchantments={
+sharpness:10,
+sweeping_edge:10
+}
+]
+
+Resultado
+
+Funciona correctamente.
+
+Notas
+
+No utiliza "levels".
+No requiere namespace minecraft:
+para cada encantamiento.
+
+Compatible con:
+
+✔ give
+
+✔ item replace
+
+# minecraft:custom_name
+# minecraft:lore
+# minecraft:unbreakable
+
+
+# minecraft:max_health
+
+Estado
+
+✔ Verificado
+
+Comando
+
+/attribute ...
+
+Resultado
+
+Aumenta la vida máxima.
+
+Notas
+
+Debe ejecutarse después
+
+/data merge entity ... {Health:100f}
+
+para rellenar la vida.
+
+
+# minecraft:step_height
+
+Estado
+
+✔ Verificado
+
+Resultado
+
+El zombie puede subir bloques de hasta
+2 bloques sin saltar.
+
+Importancia
+
+Muy alta.
+
+Utilidad
+
+Bosses gigantes.
+
+
+# minecraft:jump_strength
+
+Estado
+
+⚠ Parcial
+
+Resultado
+
+El atributo existe.
+
+El zombie NO lo utiliza.
+
+
+# MainHand
+
+/item replace entity ...
+
+---
+
+# OffHand
+
+...
+
+---
+
+# Helmet
+
+...
+
+---
+
+# Chestplate
+
+...
+
+---
+
+# Leggings
+
+...
+
+---
+
+# Boots
+
+...
+
+
+# Follow Range
+
+Resultado
+
+✔
+
+---
+
+# Can Break Doors
+
+Resultado
+
+✔
+
+---
+
+# Step Height
+
+Resultado
+
+✔
+
+---
+
+# Aggro
+
+...
+
+---
+
+# Target
+
+...
+
+
+# BOSS-001
+
+Nombre
+
+Caballero Oscuro
+
+Entidad
+
+Zombie
+
+Estado
+
+En desarrollo
+
+---
+
+Vida
+
+150
+
+---
+
+Escala
+
+2
+
+---
+
+Daño
+
+18
+
+---
+
+Velocidad
+
+0.45
+
+---
+
+Armadura
+
+20
+
+---
+
+Arma
+
+Netherite Sword
+
+---
+
+IA
+
+Persigue jugadores.
+
+Rompe puertas.
+
+---
+
+Partículas
+
+Soul Fire
+
+---
+
+Sonidos
+
+...
+
+---
+
+Comandos
+
+...
+
+---
+
+Notas
+
+...
