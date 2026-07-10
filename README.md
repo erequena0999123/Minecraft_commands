@@ -15,7 +15,7 @@ Estado: En desarrollo
 
 00. [Introducción](#introducción)
 01. [Sintaxis Minecraft 1.21.6](#componentes)
-02. [Componentes de Ítems](#minecraftenchantments)
+02. [Componentes de Ítems](docs/Componentes_Items.md)
 03. [Atributos de Entidades](#minecraftmax_health)
 04. [Equipamiento](#mainhand)
 05. [IA y Comportamientos](#follow-range)
