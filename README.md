@@ -22,7 +22,7 @@ Estado: En desarrollo
 06. [Sistema de Bosses](examples/bosses)
 07. [Sistema de Superpoderes](examples/superpowers)
 08. [Sistema de Objetos Especiales](#legendarios)
-09. [Sistema de Partículas](#soul-fire)
+09. [Sistema de Partículas](examples/particles)
 10. [Sistema de Sonidos](#enderman)
 11. [JSON Text](#color)
 12. [Execute](#execute-as)
@@ -208,33 +208,7 @@ Objetos de misión
 Objetos permanentes
 
 
-# Soul Fire
 
-Comando
-
-...
-
-Uso
-
-Boss Infernal
-
----
-
-Electric Spark
-
-...
-
----
-
-Portal
-
-...
-
----
-
-Dust
-
-...
 
 
 # Enderman
