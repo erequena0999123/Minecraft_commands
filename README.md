@@ -31,3 +31,21 @@ Estado: En desarrollo
 15. Laboratorio
 16. Recursos Externos
 99. Changelog
+
+
+
+# Introducción
+
+Esta biblioteca recopila todos los comandos, pruebas y descubrimientos
+realizados durante el desarrollo del mapa.
+
+Toda la información incluida aquí ha sido verificada
+directamente dentro de Minecraft Java 1.21.6.
+
+Objetivos
+
+- Documentar todos los sistemas.
+- Evitar repetir pruebas.
+- Mantener compatibilidad.
+- Facilitar mantenimiento.
+- Crear una base reutilizable.
