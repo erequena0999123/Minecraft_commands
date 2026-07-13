@@ -65,10 +65,10 @@ minecraft:enchantments={sharpness:5}
 #Convenciones del Proyecto
 
 Usar true/false en lugar de 1b/0b cuando la sintaxis lo permita.</br>
-Usar CustomName como objeto NBT ({text:"...",color:"..."}) para entidades.
-Usar siempre Tags únicos (boss_guardian, boss_colossus, etc.).
-Aplicar atributos con /attribute y equipamiento con /item replace en bloques separados.
-Mantener el /summon lo más limpio posible.
+Usar CustomName como objeto NBT ({text:"...",color:"..."}) para entidades.</br>
+Usar siempre Tags únicos (boss_guardian, boss_colossus, etc.).</br>
+Aplicar atributos con /attribute y equipamiento con /item replace en bloques separados.</br>
+Mantener el /summon lo más limpio posible.</br>
 
 
 # minecraft:max_health
