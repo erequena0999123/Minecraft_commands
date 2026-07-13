@@ -57,6 +57,16 @@ Desde 1.20.5 los Items utilizan Data Components.
 
 Ejemplo
 
+CustomName:{
+text:"",
+color:"",
+bold:true
+}
+
+minecraft:enchantments={
+sharpness:10
+}
+
 minecraft:diamond_sword[
 minecraft:enchantments={sharpness:5}
 ]
