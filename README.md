@@ -56,7 +56,7 @@ Objetivos
 Desde 1.20.5 los Items utilizan Data Components.
 
 Ejemplo
-
+<p>
 CustomName:{
 text:"",
 color:"",
@@ -70,9 +70,9 @@ sharpness:10
 minecraft:diamond_sword[
 minecraft:enchantments={sharpness:5}
 ]
+</p>
 
-
-#Convenciones del Proyecto
+# Convenciones del Proyecto
 
 Usar true/false en lugar de 1b/0b cuando la sintaxis lo permita.</br>
 Usar CustomName como objeto NBT ({text:"...",color:"..."}) para entidades.</br>
