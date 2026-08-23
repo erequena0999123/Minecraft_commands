@@ -64,6 +64,8 @@ bold:true,
 obfuscated:true
 }
 
+{HurtTime:8s}
+
 minecraft:death_protection={}
 
 minecraft:enchantments={
