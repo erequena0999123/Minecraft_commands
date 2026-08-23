@@ -64,6 +64,8 @@ bold:true,
 obfuscated:true
 }
 
+minecraft:death_protection={}
+
 minecraft:enchantments={
 sharpness:255
 }
