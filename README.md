@@ -407,6 +407,8 @@ https://minecraft.wiki
 
 https://www.gamergeeks.net/apps/minecraft/give-command-generator
 
+https://www.digminecraft.com/generators/
+
 Uso
 
 Generador de Items.
