@@ -60,7 +60,8 @@ Ejemplo
 CustomName:{
 text:"",
 color:"",
-bold:true
+bold:true,
+obfuscated:true
 }
 
 minecraft:enchantments={
