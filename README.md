@@ -71,7 +71,7 @@ minecraft:diamond_sword[
 minecraft:enchantments={sharpness:5}
 ]
 
-/give @p minecraft:netherite_sword[minecraft:custom_name=[{"text":"Espada del Vacío",color:"dark_red","bold":true, obfuscated:true}],minecraft:enchantments={sharpness:10,sweeping_edge:10,unbreaking:10}]
+/give @p minecraft:netherite_sword[minecraft:custom_name=[{"text":"Espada del Vacío",color:"dark_red","bold":true, obfuscated:true}], minecraft:enchantments={sharpness:10,sweeping_edge:10,unbreaking:10}]
 </p>
 
 # Convenciones del Proyecto
