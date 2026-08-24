@@ -77,6 +77,10 @@ minecraft:enchantments={sharpness:5}
 ]
 
 /give @p minecraft:netherite_sword[minecraft:custom_name=[{"text":"Espada del Vacío",color:"dark_red","bold":true, obfuscated:true}], minecraft:enchantments={sharpness:10,sweeping_edge:10,unbreaking:10}]
+
+Negar atributos:
+
+/give @p minecraft:totem_of_undying[!minecraft:death_protection]
 </p>
 
 # Convenciones del Proyecto
