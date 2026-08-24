@@ -31,7 +31,13 @@ Sonido
 no tiene
 ...
 
-Comandos
+### Comandos
+
+Caminar por paredes:
+
+execute as @a at @s unless block ^ ^1 ^1 minecraft:air run effect give @s minecraft:levitation 1 1 true
+execute as @a at @s unless block ~ ~2 ~ air run effect give @s minecraft:levitation 2 1 true
+
 
 ...
 
