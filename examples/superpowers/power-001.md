@@ -45,6 +45,7 @@ scoreboard objectives add tiempo_telarana dummy </br>
 
 scoreboard objectives add tiempo_telarana dummy </br>
 scoreboard objectives remove tiempo_telarana
+
 </br>
 
 #### Caminar por paredes:
