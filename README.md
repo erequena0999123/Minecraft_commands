@@ -302,7 +302,15 @@ execute unless
 
 execute store
 
+---
+
 execute positioned
+
+ejemplo:
+
+execute positioned -5 -24 12 run gamemode adventure @a[gamemode=survival, distance=..7]
+
+---
 
 execute facing
 
@@ -310,6 +318,7 @@ execute rotated
 
 execute anchored
 
+---
 
 Crear objetivos
 
