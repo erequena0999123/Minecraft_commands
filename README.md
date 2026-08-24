@@ -25,7 +25,7 @@ Estado: En desarrollo
 09. [Sistema de Partículas](examples/particles)
 10. [Sistema de Sonidos](#enderman)
 11. [JSON Text](#color)
-12. [Execute](#execute-as)
+12. [Execute](#execute)
 13. [Scoreboards](#crear-objetivos)
 14. [Funciones Útiles](#eliminar-entidades)
 15. [Laboratorio](#lab-001)
@@ -285,9 +285,16 @@ Keybind
 }
 
 
+# Execute
+
 execute as
 
+
+---
+
 execute at
+
+---
 
 execute if
 
