@@ -3,24 +3,24 @@
 ### Nombre
 Poderes de Spider man
 ---
-Velocidad
+### Velocidad
 No tiene
 
 ---
-Objeto
+### Objeto
 Bolas de nieve
 
 ---
-Botas
+### Botas
 no tiene
 
 ---
-Cooldown
+### Cooldown
 
 1-2 segundos levitacion
 
 ---
-Partículas
+### Partículas
 no tiene
 
 ---
@@ -28,23 +28,23 @@ Cloud
 no tiene
 
 ---
-Sonido
+### Sonido
 no tiene
 ...
 
 ### Comandos
 
-Colocar tags y scoreboards:
+#### Colocar tags y scoreboards:
 
 tag ManuneitorMC add spider_man </br>
 scoreboard objectives add tiempo_telarana dummy </br>
 
-Quitar tags y scoreboards:
+#### Quitar tags y scoreboards:
 
 scoreboard objectives add tiempo_telarana dummy </br>
 scoreboard objectives remove tiempo_telarana
 
-Caminar por paredes:
+#### Caminar por paredes:
 
 execute as @a[tag=spider_man] at @s unless block ^ ^1 ^1 minecraft:air run effect give @s minecraft:levitation 1 1 true </br>
 execute as @a[tag=spider_man] at @s unless block ~ ~2 ~ air run effect give @s minecraft:levitation 2 1 true </br>
@@ -52,11 +52,11 @@ execute as @a[tag=spider_man] at @s unless block ~ ~-1 ~ minecraft:air run effec
 
 </br>
 
-Dar bolas de nieve:
+#### Dar bolas de nieve:
 
 execute as @a[tag=spider_man] unless items entity @s hotbar.* minecraft:snowball run give @s minecraft:snowball 2
 
-Efecto de telarañas con bolas de nieve:
+#### Efecto de telarañas con bolas de nieve:
 
 execute if entity @a[tag=spider_man] </br>
 execute as @e[type=minecraft:snowball] at @s positioned ^ ^1 ^ if block ~ ~ ~ minecraft:air run summon minecraft:interaction ~ ~ ~ {Tags:["reloj_telarana"],Passengers:[{text:''}]} </br>
