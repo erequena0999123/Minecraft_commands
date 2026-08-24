@@ -2,23 +2,33 @@
 
 ### Nombre
 Poderes de Spider man
-
+---
 Velocidad
+No tiene
 
+---
 Objeto
 
+---
 Botas
+no tiene
 
+---
 Cooldown
 
-10 segundos
+1-2 segundos levitacion
 
+---
 Partículas
+no tiene
 
+---
 Cloud
+no tiene
 
+---
 Sonido
-
+no tiene
 ...
 
 Comandos
