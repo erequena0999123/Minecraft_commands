@@ -24,7 +24,7 @@ no tiene
 no tiene
 
 ---
-Cloud
+### Cloud
 no tiene
 
 ---
@@ -39,10 +39,13 @@ no tiene
 tag ManuneitorMC add spider_man </br>
 scoreboard objectives add tiempo_telarana dummy </br>
 
+</br>
+
 #### Quitar tags y scoreboards:
 
 scoreboard objectives add tiempo_telarana dummy </br>
 scoreboard objectives remove tiempo_telarana
+</br>
 
 #### Caminar por paredes:
 
@@ -55,6 +58,8 @@ execute as @a[tag=spider_man] at @s unless block ~ ~-1 ~ minecraft:air run effec
 #### Dar bolas de nieve:
 
 execute as @a[tag=spider_man] unless items entity @s hotbar.* minecraft:snowball run give @s minecraft:snowball 2
+
+</br>
 
 #### Efecto de telarañas con bolas de nieve:
 
