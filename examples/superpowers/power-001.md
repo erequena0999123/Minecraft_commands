@@ -55,8 +55,13 @@ no tiene
 
 #### Quitar tags y scoreboards:
 
-scoreboard objectives add tiempo_telarana dummy <strong>(impulso-necesita redstone)</strong> </br>
-scoreboard objectives remove tiempo_telarana <strong>(cadena-siempre activo)</strong>
+<strong>(impulso-necesita redstone)</strong>
+
+<pre>scoreboard objectives add tiempo_telarana dummy</pre>  </br>
+
+<strong>(cadena-siempre activo)</strong>
+
+<pre>scoreboard objectives remove tiempo_telarana</pre>
 
 </br>
 
