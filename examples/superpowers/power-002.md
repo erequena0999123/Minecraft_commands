@@ -47,7 +47,11 @@ no tiene
 
 <pre>tag ManuneitorMC add doctor_strange</pre>
 
+
+<strong>cadena-siempre activo</strong>
+
 <pre>/scoreboard objectives add tiempo_parado dummy</pre>
+<pre>scoreboard players set @a[tag=doctor_strange] tiempo_parado 0</pre>
 
 </br>
 
