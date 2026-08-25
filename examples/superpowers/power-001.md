@@ -43,15 +43,15 @@ no tiene
 
 #### Colocar tags y scoreboards:
 
-tag ManuneitorMC add spider_man </br>
-scoreboard objectives add tiempo_telarana dummy </br>
+tag ManuneitorMC add spider_man (impulso-necesita redstone)</br>
+scoreboard objectives add tiempo_telarana dummy (cadena-siempre activo)</br>
 
 </br>
 
 #### Quitar tags y scoreboards:
 
-scoreboard objectives add tiempo_telarana dummy </br>
-scoreboard objectives remove tiempo_telarana
+scoreboard objectives add tiempo_telarana dummy (impulso-necesita redstone)</br>
+scoreboard objectives remove tiempo_telarana (cadena-siempre activo)
 
 </br>
 
