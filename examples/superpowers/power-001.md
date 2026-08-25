@@ -3,8 +3,11 @@
 ### Nombre
 Poderes de Spider man
 ---
-### Velocidad
-No tiene
+### Habilidades:
+<li>
+  Poder escalar paredes
+  Lanzar telas de arañas
+</li>
 
 ---
 ### Objeto
