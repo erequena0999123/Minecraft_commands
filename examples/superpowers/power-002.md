@@ -66,27 +66,30 @@ no tiene
 
 
 
-#### Caminar por paredes:
+#### Timer de uso de la habilidad:
 
-execute as @a[tag=spider_man] at @s unless block ^ ^1 ^1 minecraft:air run effect give @s minecraft:levitation 1 1 true </br>
-execute as @a[tag=spider_man] at @s unless block ~ ~2 ~ air run effect give @s minecraft:levitation 2 1 true </br>
-execute as @a[tag=spider_man] at @s unless block ~ ~-1 ~ minecraft:air run effect clear @a minecraft:levitation
+<strong>repetir-necesita redstone</strong>
+<pre>execute as @a[tag=doctor_strange, scores={tiempo_parado=0}] if items entity @s weapon.mainhand minecraft:clock run scoreboard players set @s tiempo_parado 5200</pre>
 
-</br>
 
-#### Dar bolas de nieve:
+<strong>cadena-siempre activo</strong>
+<pre>execute as @a[scores={tiempo_parado=1..}] run scoreboard players remove @s tiempo_parado 1</pre>
 
-execute as @a[tag=spider_man] unless items entity @s hotbar.* minecraft:snowball run give @s minecraft:snowball 2
 
-</br>
 
-#### Efecto de telarañas con bolas de nieve:
+#### Dar Reloj:
 
-execute if entity @a[tag=spider_man] </br>
-execute as @e[type=minecraft:snowball] at @s positioned ^ ^1 ^ if block ~ ~ ~ minecraft:air run summon minecraft:interaction ~ ~ ~ {Tags:["reloj_telarana"],Passengers:[{text:''}]} </br>
+<strong>repetir-necesita redstone</strong>
+<pre>execute as @a[tag=doctor_strange] unless items entity @s hotbar.* minecraft:clock run give @s minecraft:clock[minecraft:custom_name=[{text:'Reloj del Tiempo', color:'blue', lore:[[{"text":"El Reloj que controla el tiempo","italic":true}]], obfuscated:true}]]</pre>
 
-execute at @e[tag=reloj_telarana] run setblock ~ ~ ~ minecraft:cobweb replace </br>
-execute as @e[tag=reloj_telarana] at @s run scoreboard players add @s tiempo_telarana 1 </br>
-execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:cobweb </br>
-execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] run kill @s
+
+
+#### Paralizar y desparalizar entidades dentro del rango:
+
+
+<strong>repetir-necesita redstone (Bloques de repeticion separados)</strong>
+<pre>/execute as @a[tag=doctor_strange, scores={tiempo_parado=2400..}] at @s as @e[type=!minecraft:player,distance=..50] run data merge entity @s {NoAI:true}</pre>
+
+<pre>/execute as @a[tag=doctor_strange, scores={tiempo_parado=..2400}] at @s as @e[type=!minecraft:player,distance=..50] run data merge entity @s {NoAI:false}</pre>
+
 
