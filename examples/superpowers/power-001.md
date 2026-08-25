@@ -43,7 +43,7 @@ no tiene
 
 #### Colocar tags y scoreboards:
 
-tag ManuneitorMC add spider_man (impulso-necesita redstone)</br>
+tag ManuneitorMC add spider_man <strong>(impulso-necesita redstone)</strong></br>
 scoreboard objectives add tiempo_telarana dummy (cadena-siempre activo)</br>
 
 </br>
