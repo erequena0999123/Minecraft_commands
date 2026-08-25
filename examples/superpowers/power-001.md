@@ -42,7 +42,7 @@ no tiene
 ### Comandos
 
 #### Colocar tags y scoreboards:
-
+<p>
 <strong>impulso-necesita redstone</strong>
 
 <pre>tag ManuneitorMC add spider_man</pre>
@@ -102,3 +102,4 @@ no tiene
 <pre>execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:cobweb </pre>
 <pre>execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] run kill @s </pre>
 
+</p>
