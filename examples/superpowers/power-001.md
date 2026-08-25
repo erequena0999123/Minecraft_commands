@@ -57,7 +57,7 @@ no tiene
 
 <strong>impulso-necesita redstone</strong>
 
-<pre>tag ManuneitorMC remove spider_man</pre>  
+<pre>tag @a[tag=spider_man] remove spider_man</pre>  
 
 <strong>cadena-siempre activo</strong>
 
