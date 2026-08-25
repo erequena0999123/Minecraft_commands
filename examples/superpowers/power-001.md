@@ -67,11 +67,11 @@ no tiene
 
 #### Caminar por paredes:
 
-<strong>(repeticion-necesita redstone)</strong>
+<strong>repeticion-necesita redstone</strong>
 
-<pre>execute as @a[tag=spider_man] at @s unless block ^ ^1 ^1 minecraft:air run effect give @s minecraft:levitation 1 1 true</pre> </br>
+<pre>execute as @a[tag=spider_man] at @s unless block ^ ^1 ^1 minecraft:air run effect give @s minecraft:levitation 1 1 true</pre>
 
-<strong>(cadena-siempre activo)</strong>
+<strong>cadena-siempre activo</strong>
 
 <pre>execute as @a[tag=spider_man] at @s unless block ~ ~2 ~ air run effect give @s minecraft:levitation 2 1 true</pre>
 <pre>execute as @a[tag=spider_man] at @s unless block ~ ~-1 ~ minecraft:air run effect clear @a minecraft:levitation</pre>
@@ -80,17 +80,25 @@ no tiene
 
 #### Dar bolas de nieve:
 
-execute as @a[tag=spider_man] unless items entity @s hotbar.* minecraft:snowball run give @s minecraft:snowball 2
+<strong>repeticion-necesita redstone</strong>
+
+<pre>execute as @a[tag=spider_man] unless items entity @s hotbar.* minecraft:snowball run give @s minecraft:snowball 2</pre>
 
 </br>
 
 #### Efecto de telarañas con bolas de nieve:
 
-execute if entity @a[tag=spider_man] </br>
-execute as @e[type=minecraft:snowball] at @s positioned ^ ^1 ^ if block ~ ~ ~ minecraft:air run summon minecraft:interaction ~ ~ ~ {Tags:["reloj_telarana"],Passengers:[{text:''}]} </br>
+<strong>repeticion-necesita redstone</strong>
 
-execute at @e[tag=reloj_telarana] run setblock ~ ~ ~ minecraft:cobweb replace </br>
-execute as @e[tag=reloj_telarana] at @s run scoreboard players add @s tiempo_telarana 1 </br>
-execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:cobweb </br>
-execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] run kill @s
+<pre>execute if entity @a[tag=spider_man]</pre>
+
+<strong>cadena-siempre activo-condicional</strong>
+<pre>execute as @e[type=minecraft:snowball] at @s positioned ^ ^1 ^ if block ~ ~ ~ minecraft:air run summon minecraft:interaction ~ ~ ~ {Tags:["reloj_telarana"],Passengers:[{text:''}]} </pre>
+
+<strong>cadena-siempre activo-incondicional</strong>
+
+<pre>execute at @e[tag=reloj_telarana] run setblock ~ ~ ~ minecraft:cobweb replace </pre>
+<pre>execute as @e[tag=reloj_telarana] at @s run scoreboard players add @s tiempo_telarana 1 </pre>
+<pre>execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:cobweb </pre>
+<pre>execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] run kill @s </pre>
 
