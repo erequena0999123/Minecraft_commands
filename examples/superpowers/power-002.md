@@ -43,6 +43,8 @@ no tiene
 
 #### Colocar tags y scoreboards:
 
+<strong>impulso-necesita redstone</strong>
+
 <pre>tag ManuneitorMC add doctor_strange</pre>
 
 <pre>/scoreboard objectives add tiempo_parado dummy</pre>
