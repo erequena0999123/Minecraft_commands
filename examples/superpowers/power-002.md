@@ -57,10 +57,14 @@ no tiene
 
 #### Quitar tags y scoreboards:
 
-scoreboard objectives add tiempo_telarana dummy </br>
-scoreboard objectives remove tiempo_telarana
+<strong>impulso-necesita redstone</strong>
+<pre>tag @a[tag=doctor_strange] remove doctor_strange</pre>
 
-</br>
+
+<strong>cadena-siempre activo</strong>
+<pre>/scoreboard objectives remove tiempo_parado</pre>
+
+
 
 #### Caminar por paredes:
 
