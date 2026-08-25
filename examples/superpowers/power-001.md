@@ -67,9 +67,14 @@ no tiene
 
 #### Caminar por paredes:
 
-execute as @a[tag=spider_man] at @s unless block ^ ^1 ^1 minecraft:air run effect give @s minecraft:levitation 1 1 true </br>
-execute as @a[tag=spider_man] at @s unless block ~ ~2 ~ air run effect give @s minecraft:levitation 2 1 true </br>
-execute as @a[tag=spider_man] at @s unless block ~ ~-1 ~ minecraft:air run effect clear @a minecraft:levitation
+<strong>(repeticion-necesita redstone)</strong>
+
+<pre>execute as @a[tag=spider_man] at @s unless block ^ ^1 ^1 minecraft:air run effect give @s minecraft:levitation 1 1 true</pre> </br>
+
+<strong>(cadena-siempre activo)</strong>
+
+<pre>execute as @a[tag=spider_man] at @s unless block ~ ~2 ~ air run effect give @s minecraft:levitation 2 1 true</pre>
+<pre>execute as @a[tag=spider_man] at @s unless block ~ ~-1 ~ minecraft:air run effect clear @a minecraft:levitation</pre>
 
 </br>
 
