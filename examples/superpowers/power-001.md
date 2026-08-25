@@ -10,11 +10,11 @@ Poderes de Spider man
 </ul>
 
 ---
-### Objeto
+### Items
 Bolas de nieve
 
 ---
-### Botas
+### Equipo
 no tiene
 
 ---
@@ -33,7 +33,8 @@ no tiene
 ---
 ### Sonido
 no tiene
-...
+
+---
 
 ### Comandos
 
@@ -75,10 +76,3 @@ execute as @e[tag=reloj_telarana] at @s run scoreboard players add @s tiempo_tel
 execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] at @s run fill ~ ~ ~ ~ ~ ~ minecraft:air replace minecraft:cobweb </br>
 execute as @e[tag=reloj_telarana, scores={tiempo_telarana=100..}] run kill @s
 
-
-...
-
-
-POWER-002
-
-Teletransporte
