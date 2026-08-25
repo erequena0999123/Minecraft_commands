@@ -1,17 +1,17 @@
 # POWER-002
 
 ### Nombre
-Poderes de Spider man
+Poderes de Doctor Strange
 ---
 ### Habilidades:
 <ul>
-  <li>Poder escalar paredes</li>
-  <li>Lanzar telas de arañas</li>
+  <li>Poder detener a las entidades de su rango</li>
+ 
 </ul>
 
 ---
 ### Items
-Bolas de nieve
+Reloj
 
 ---
 ### Equipo
@@ -20,8 +20,8 @@ no tiene
 ---
 ### Cooldown
 <ul>
-  <li>1-2 segundos levitacion</li>
-  <li>5 segundos de telarañas</li>
+  <li>2 minutos y 20 segundos de paralizacion del tiempo</li>
+  <li>2 minutos de cooldown para volver a usar la habilidad</li>
 </ul>
 
 ---
@@ -43,8 +43,9 @@ no tiene
 
 #### Colocar tags y scoreboards:
 
-tag ManuneitorMC add spider_man </br>
-scoreboard objectives add tiempo_telarana dummy </br>
+<pre>tag ManuneitorMC add doctor_strange</pre>
+
+<pre>/scoreboard objectives add tiempo_parado dummy</pre>
 
 </br>
 
