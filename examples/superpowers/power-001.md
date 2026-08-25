@@ -57,7 +57,7 @@ no tiene
 
 <strong>impulso-necesita redstone</strong>
 
-<pre>scoreboard objectives add tiempo_telarana dummy</pre>  
+<pre>tag ManuneitorMC remove spider_man</pre>  
 
 <strong>cadena-siempre activo</strong>
 
