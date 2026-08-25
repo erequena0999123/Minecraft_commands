@@ -23,7 +23,9 @@ no tiene
   <li>1-2 segundos levitacion</li>
   <li>5 segundos de telarañas</li>
 </ul>
+
 ---
+
 ### Partículas
 no tiene
 
