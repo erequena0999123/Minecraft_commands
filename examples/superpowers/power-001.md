@@ -4,10 +4,10 @@
 Poderes de Spider man
 ---
 ### Habilidades:
-<li>
-  Poder escalar paredes </br>
-  Lanzar telas de arañas
-</li>
+<ul>
+  <li>Poder escalar paredes</li>
+  <li>Lanzar telas de arañas</li>
+</ul>
 
 ---
 ### Objeto
