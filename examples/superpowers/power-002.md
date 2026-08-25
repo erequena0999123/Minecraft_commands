@@ -5,7 +5,7 @@ Poderes de Doctor Strange
 ---
 ### Habilidades:
 <ul>
-  <li>Poder detener a las entidades de su rango</li>
+  <li>Poder detener a las entidades dentro de su rango</li>
  
 </ul>
 
