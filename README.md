@@ -44,12 +44,13 @@ directamente dentro de Minecraft Java 1.21.6.
 
 Objetivos
 
-- Documentar todos los sistemas.
-- Evitar repetir pruebas.
-- Mantener compatibilidad.
-- Facilitar mantenimiento.
-- Crear una base reutilizable.
-
+<ul>
+<li> Documentar todos los sistemas.</li>
+<li> Evitar repetir pruebas.</li>
+<li> Mantener compatibilidad.</li>
+<li> Facilitar mantenimiento.</li>
+<li> Crear una base reutilizable.</li>
+</ul>
 
 # Componentes
 
@@ -85,12 +86,13 @@ Negar atributos:
 
 # Convenciones del Proyecto
 
-Usar true/false en lugar de 1b/0b cuando la sintaxis lo permita.</br>
-Usar CustomName como objeto NBT ({text:"...",color:"..."}) para entidades.</br>
-Usar siempre Tags únicos (boss_guardian, boss_colossus, etc.).</br>
-Aplicar atributos con /attribute y equipamiento con /item replace en bloques separados.</br>
-Mantener el /summon lo más limpio posible.</br>
-
+<ul>
+<li>Usar true/false en lugar de 1b/0b cuando la sintaxis lo permita.</li>
+<li>Usar CustomName como objeto NBT ({text:"...",color:"..."}) para entidades.</li>
+<li>Usar siempre Tags únicos (boss_guardian, boss_colossus, etc.).</li>
+<li>Aplicar atributos con /attribute y equipamiento con /item replace en bloques separados.</li>
+<li>Mantener el /summon lo más limpio posible.</li>
+</ul>
 
 # minecraft:max_health
 
