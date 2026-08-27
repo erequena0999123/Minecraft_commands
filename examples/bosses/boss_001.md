@@ -2,7 +2,7 @@
 
 Nombre
 
-Caballero Oscuro
+General del Vacio
 
 Entidad
 
@@ -10,7 +10,7 @@ Zombie
 
 Estado
 
-En desarrollo
+Terminado
 
 ---
 
@@ -70,8 +70,10 @@ Sonidos
 
 ---
 
-Comandos
+### Comandos
 
+
+<pre>/summon minecraft:zombie ~ ~1 ~ {Tags:["boss_void_general"],PersistenceRequired:true,CanBreakDoors:true,CustomName:{text:"El General del Vacío",color:"dark_red",bold:true},CustomNameVisible:true}</pre>
 ...
 
 ---
