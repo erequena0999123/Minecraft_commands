@@ -69,14 +69,14 @@ no tiene
 #### Timer de uso de la habilidad:
 
 <strong>repetir-necesita redstone</strong>
-<pre>execute as @a[tag=aura_dmg, scores={tiempo_aura=0}] if items entity @s weapon.mainhand minecraft:wither_skeleton_skull run scoreboard players set @s tiempo_aura 5200</pre>
+<pre>execute as @a[tag=aura_dmg, scores={tiempo_aura=0}] if items entity @s weapon.mainhand minecraft:skeleton_skull run scoreboard players set @s tiempo_aura 5200</pre>
 
 <pre>execute as @a[scores={tiempo_aura=1..}] run scoreboard players remove @s tiempo_aura 1</pre>
 
 #### Dar Calavera
 
 <strong>repetir-necesita redstone</strong>
-<pre>execute as @a[tag=aura_dmg] unless items entity @s hotbar.* minecraft:skeleton_skull run give @s minecraft:wither_skeleton_skull[minecraft:custom_name=[{text:'Kill aura', color:'red', lore:[[{"text":"El Reloj que controla el tiempo","italic":true}]], obfuscated:true}]]</pre>
+<pre>execute as @a[tag=aura_dmg] unless items entity @s hotbar.* minecraft:skeleton_skull run give @s minecraft:skeleton_skull[minecraft:custom_name=[{text:'Kill aura', color:'red', lore:[[{"text":"El Reloj que controla el tiempo","italic":true}]], obfuscated:true}]]</pre>
 
 #### Uso de la habilidad
 
