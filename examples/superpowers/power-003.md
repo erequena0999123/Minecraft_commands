@@ -1,11 +1,11 @@
-# POWER-002
+# POWER-003
 
 ### Nombre
-Poderes de Doctor Strange
+Poderes de Kill aura
 ---
 ### Habilidades:
 <ul>
-  <li>Poder detener a las entidades dentro de su rango</li>
+  <li>Poder hacer daño a las entidades dentro de su rango (cuentan objetos tirados en el piso)</li>
  
 </ul>
 
