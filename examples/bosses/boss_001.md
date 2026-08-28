@@ -58,7 +58,7 @@ Netherite Sword
 
 ### IA
 
-Persigue jugadores.
+Persigue jugadores rango de 70
 
 ---
 
@@ -70,7 +70,7 @@ Soul Fire
 
 ### Sonidos
 
-Noormales del zombie
+Normales del zombie
 
 ---
 
@@ -96,6 +96,29 @@ Noormales del zombie
 <pre>/attribute @e[tag=boss_void_general,limit=1,sort=nearest] minecraft:armor base set 18</pre>
 
 <pre>/attribute @e[tag=boss_void_general,limit=1,sort=nearest] minecraft:armor_toughness base set 12</pre>
+
+<pre>/attribute @e[tag=boss_void_general,limit=1,sort=nearest] minecraft:knockback_resistance base set 0.9</pre>
+
+<pre>/attribute @e[tag=boss_void_general,limit=1,sort=nearest] minecraft:attack_knockback base set 4</pre>
+
+<pre>/attribute @e[tag=boss_void_general,limit=1,sort=nearest] minecraft:follow_range base set 70</pre>
+
+<pre>/attribute @e[tag=boss_void_general,limit=1,sort=nearest] minecraft:step_height base set 5</pre>
+
+<pre>/effect give @e[tag=boss_void_general,limit=1,sort=nearest] minecraft:fire_resistance infinite 0 true</pre>
+
+Aplicacion de armadura al boss:
+
+<pre>/item replace entity @e[tag=boss_void_general,limit=1,sort=nearest] weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={sharpness:7,sweeping_edge:5,fire_aspect:2,unbreaking:5}]</pre>
+
+<pre>/item replace entity @e[tag=boss_void_general,limit=1,sort=nearest] armor.head with minecraft:netherite_helmet[minecraft:enchantments={protection:5,unbreaking:5}]</pre>
+
+<pre>/item replace entity @e[tag=boss_void_general,limit=1,sort=nearest] armor.chest with minecraft:netherite_chestplate[minecraft:enchantments={protection:5,unbreaking:5}]</pre>
+
+<pre>/item replace entity @e[tag=boss_void_general,limit=1,sort=nearest] armor.legs with minecraft:netherite_leggings[minecraft:enchantments={protection:5,unbreaking:5}]</pre>
+
+<pre>/item replace entity @e[tag=boss_void_general,limit=1,sort=nearest] armor.feet with minecraft:netherite_boots[minecraft:enchantments={protection:5,feather_falling:20,unbreaking:5}]</pre>
+
 
 ---
 
