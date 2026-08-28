@@ -133,6 +133,7 @@ Si deseas evitar que se golpeen entre multiples bosses coloca comandos de team, 
 Y si deseas agregar un boss al equipo le colocas al final de la secuencia un bloque de:
 
 <strong>cadena-siempre activo</strong>
+<pre>/team join bosses @e[tag=boss_void_general]</pre>
 <pre>/team join bosses @e[tag=boss_colossus]</pre>
 <pre>/team join bosses @e[tag=boss_hunter]</pre>
 <pre>/team join bosses @e[tag=boss_necromancer]</pre>
