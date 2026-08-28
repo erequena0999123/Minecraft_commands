@@ -124,4 +124,19 @@ Aplicacion de armadura al boss:
 
 ### Notas
 
-...
+Si deseas evitar que se golpeen entre multiples bosses coloca comandos de team, por ejemplo:
+
+<strong>impulso-necesita redstone</strong>
+<pre>/team add bosses</pre>
+
+
+Y si deseas agregar al boss al equipo le colocas al final bloque de:
+
+<strong>cadena-siempre activo</strong>
+<pre>/team join bosses @e[tag=boss_colossus]</pre>
+<pre>/team join bosses @e[tag=boss_hunter]</pre>
+<pre>/team join bosses @e[tag=boss_necromancer]</pre>
+
+
+
+
