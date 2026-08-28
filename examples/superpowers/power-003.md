@@ -45,24 +45,24 @@ no tiene
 
 <strong>impulso-necesita redstone</strong>
 
-<pre>tag ManuneitorMC add doctor_strange</pre>
+<pre>tag ManuneitorMC add aura_dmg</pre>
 
 
 <strong>cadena-siempre activo</strong>
 
-<pre>/scoreboard objectives add tiempo_parado dummy</pre>
-<pre>scoreboard players set @a[tag=doctor_strange] tiempo_parado 0</pre>
+<pre>/scoreboard objectives add tiempo_aura dummy</pre>
+<pre>scoreboard players set @a[tag=aura_dmg] tiempo_aura 0</pre>
 
 </br>
 
 #### Quitar tags y scoreboards:
 
 <strong>impulso-necesita redstone</strong>
-<pre>tag @a[tag=doctor_strange] remove doctor_strange</pre>
+<pre>tag @a[tag=aura_dmg] remove aura_dmg</pre>
 
 
 <strong>cadena-siempre activo</strong>
-<pre>/scoreboard objectives remove tiempo_parado</pre>
+<pre>scoreboard objectives remove tiempo_aura</pre>
 
 
 
