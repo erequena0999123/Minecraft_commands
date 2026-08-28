@@ -69,7 +69,7 @@ no tiene
 #### Timer de uso de la habilidad:
 
 <strong>repetir-necesita redstone</strong>
-<pre>execute as @a[tag=doctor_strange, scores={tiempo_parado=0}] if items entity @s weapon.mainhand minecraft:clock run scoreboard players set @s tiempo_parado 
+<pre>execute as @a[tag=doctor_strange, scores={tiempo_parado=0}] if items entity @s weapon.mainhand minecraft:clock run scoreboard players set @s tiempo_parado</pre>
 
 ### Dar Calavera
 
