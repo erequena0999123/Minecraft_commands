@@ -70,3 +70,9 @@ no tiene
 
 <strong>repetir-necesita redstone</strong>
 <pre>execute as @a[tag=doctor_strange, scores={tiempo_parado=0}] if items entity @s weapon.mainhand minecraft:clock run scoreboard players set @s tiempo_parado 
+
+### Dar Calavera
+
+<strong>repetir-necesita redstone</strong>
+<pre>execute as @a[tag=aura_dmg] unless items entity @s hotbar.* minecraft:skeleton_skull run give @s minecraft:wither_skeleton_skull[minecraft:custom_name=[{text:'Kill aura', color:'red', lore:[[{"text":"El Reloj que controla el tiempo","italic":true}]], obfuscated:true}]]</pre>
+  
