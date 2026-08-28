@@ -11,7 +11,7 @@ Poderes de Kill aura
 
 ---
 ### Items
-Reloj
+Calavera de esqueleto
 
 ---
 ### Equipo
@@ -20,8 +20,8 @@ no tiene
 ---
 ### Cooldown
 <ul>
-  <li>2 minutos y 20 segundos de paralizacion del tiempo</li>
-  <li>2 minutos de cooldown para volver a usar la habilidad</li>
+  <li>3 minutos y 20 segundos de paralizacion del tiempo</li>
+  <li>1 minuto de cooldown para volver a usar la habilidad</li>
 </ul>
 
 ---
