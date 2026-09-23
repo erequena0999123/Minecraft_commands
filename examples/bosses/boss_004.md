@@ -100,6 +100,11 @@ Normales de Evoker
 <pre>/effect give @e[tag=boss_necromancer,limit=1,sort=nearest] minecraft:fire_resistance infinite 0 true</pre>
 
 
+<strong>repetir-necesita redstone</strong>
+
+<pre>execute at @e[tag=aura_dmg_boss] run damage @n[type=minecraft:player, distance=..5] 2 minecraft:indirect_magic</pre>
+
+
 <strong> Equipo </strong>
 
 <pre>/team join bosses @e[tag=boss_necromancer]</pre>
