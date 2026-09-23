@@ -2,7 +2,7 @@
 
 ### Nombre
 
-EL NIgromante
+EL Nigromante
 
 ### Entidad
 
@@ -34,15 +34,15 @@ Terminado
 
 ### Velocidad
 
-0.32
+0.26
 
 ---
 
 ### Armadura
 
-Peto de Diamante
+No tiene
 
-10
+8
 
 ### Resistencia
 
@@ -52,13 +52,13 @@ Peto de Diamante
 
 ### Arma
 
-Arco
+No tiene
 
 ---
 
 ### IA
 
-Persigue jugadores rango de 70
+Persigue jugadores rango de 150
 
 ---
 
@@ -70,7 +70,7 @@ No tiene
 
 ### Sonidos
 
-Normales de Stray
+Normales de Evoker
 
 ---
 
@@ -89,11 +89,17 @@ Normales de Stray
 
 <pre>/data merge entity @e[tag=boss_necromancer,limit=1,sort=nearest] {Health:300f}</pre>
 
+<pre>/attribute @e[tag=boss_necromancer,limit=1,sort=nearest] minecraft:attack_damage base set 20</pre>
+
+<pre>/attribute @e[tag=boss_necromancer,limit=1,sort=nearest] minecraft:armor base set 8</pre>
+
+<pre>/attribute @e[tag=boss_necromancer,limit=1,sort=nearest] minecraft:movement_speed base set 0.26</pre>
+
+<pre>/attribute @e[tag=boss_necromancer,limit=1,sort=nearest] minecraft:follow_range base set 150</pre>
+
+<pre>/effect give @e[tag=boss_necromancer,limit=1,sort=nearest] minecraft:fire_resistance infinite 0 true</pre>
+
 
 <strong> Equipo </strong>
 
-<pre>/item replace entity @e[tag=boss_hunter,limit=1,sort=nearest] weapon.mainhand with minecraft:bow[minecraft:enchantments={power:100,punch:2,flame:1,unbreaking:5}]</pre>
-
-<pre>/item replace entity @e[tag=boss_hunter,limit=1,sort=nearest] armor.chest with minecraft:diamond_chestplate[minecraft:enchantments={protection:10,unbreaking:5}]</pre>
-
-<pre>/team join bosses @e[tag=boss_hunter]</pre>
+<pre>/team join bosses @e[tag=boss_necromancer]</pre>
