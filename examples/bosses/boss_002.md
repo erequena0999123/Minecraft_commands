@@ -34,7 +34,7 @@ Terminado
 
 ### Velocidad
 
-0.34
+0.43
 
 ---
 
@@ -42,7 +42,7 @@ Terminado
 
 Full netherite
 
-18
+30
 
 ### Resistencia
 
@@ -58,7 +58,7 @@ No tiene
 
 ### IA
 
-Persigue jugadores rango de 70
+Persigue jugadores rango de 100
 
 ---
 
@@ -96,3 +96,23 @@ Normales del zombie
 <pre>/attribute @e[tag=boss_colossus,limit=1,sort=nearest] minecraft:armor_toughness base set 20</pre>
 
 <pre>/attribute @e[tag=boss_colossus,limit=1,sort=nearest] minecraft:knockback_resistance base set 1</pre>
+
+<pre>/attribute @e[tag=boss_colossus,limit=1,sort=nearest] minecraft:movement_speed base set 0.43</pre>
+
+<pre>/attribute @e[tag=boss_colossus,limit=1,sort=nearest] minecraft:follow_range base set 100</pre>
+
+<pre>/attribute @e[tag=boss_colossus,limit=1,sort=nearest] minecraft:step_height base set 5</pre>
+
+<pre>/effect give @e[tag=boss_colossus,limit=1,sort=nearest] minecraft:fire_resistance infinite 0 true</pre>
+
+<strong> Equipo </strong>
+
+<pre>/item replace entity @e[tag=boss_colossus,limit=1,sort=nearest] armor.head with minecraft:netherite_helmet[minecraft:enchantments={protection:10,unbreaking:5}]</pre>
+
+<pre>/item replace entity @e[tag=boss_colossus,limit=1,sort=nearest] armor.chest with minecraft:netherite_chestplate[minecraft:enchantments={protection:10,unbreaking:5}]</pre>
+
+<pre>/item replace entity @e[tag=boss_colossus,limit=1,sort=nearest] armor.legs with minecraft:netherite_leggings[minecraft:enchantments={protection:10,unbreaking:5}]</pre>
+
+<pre>/item replace entity @e[tag=boss_colossus,limit=1,sort=nearest] armor.feet with minecraft:netherite_boots[minecraft:enchantments={protection:10,feather_falling:20,unbreaking:5}]</pre>
+
+<pre>team join bosses @e[tag=boss_colossus]</pre>
