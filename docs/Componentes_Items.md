@@ -4,14 +4,9 @@ Estado
 
 ✔ Verificado
 
-Comando
+Comando para bloque, sin barra inicial. Para usarlo desde el chat del juego, añade `/` delante.
 
-/give @p minecraft:netherite_sword[
-minecraft:enchantments={
-sharpness:10,
-sweeping_edge:10
-}
-]
+<pre>give @p minecraft:netherite_sword[minecraft:enchantments={sharpness:10,sweeping_edge:10}]</pre>
 
 Resultado
 
