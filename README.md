@@ -19,16 +19,16 @@ Estado: En desarrollo
 03. [Atributos de Entidades](#minecraftmax_health)
 04. [Equipamiento](#mainhand)
 05. [IA y Comportamientos](#follow-range)
-06. [Sistema de Bosses](examples/bosses)
-07. [Sistema de Superpoderes](examples/superpowers)
-08. [Sistema de Objetos Especiales](#legendarios)
+06. [Sistema de Bosses](examples/bosses/README.md)
+07. [Sistema de Superpoderes](examples/superpowers/README.md)
+08. [Objetos especiales — extras](extras/objetos-especiales.md)
 09. [Sistema de Partículas](examples/particles)
-10. [Sistema de Sonidos](#enderman)
+10. [Sonidos — extras](extras/sonidos.md)
 11. [JSON Text](#color)
 12. [Execute](#execute)
 13. [Scoreboards](#crear-objetivos)
 14. [Funciones Útiles](#eliminar-entidades)
-15. [Laboratorio](#lab-001)
+15. [Laboratorios — extras](extras/laboratorios.md)
 16. [Recursos Externos](#documentación)
 99. [Changelog](#v001)
 
@@ -54,35 +54,33 @@ Objetivos
 
 # Componentes
 
-Desde 1.20.5 los Items utilizan Data Components.
+Desde 1.20.5 los ítems utilizan Data Components. Los siguientes fragmentos muestran estructuras; no son comandos completos.
 
-Ejemplo
-<p>
-CustomName:{
-text:"",
-color:"",
-bold:true,
-obfuscated:true
-}
+## Nombre de entidad: NBT de la entidad
 
-{HurtTime:8s}
+Este dato corresponde a la entidad; no es un componente de ítem:
 
-minecraft:death_protection={}
+<pre>CustomName:{text:"",color:"",bold:true,obfuscated:true}</pre>
 
-minecraft:enchantments={
-sharpness:255
-}
+Otro fragmento de dato de entidad:
 
-minecraft:diamond_sword[
-minecraft:enchantments={sharpness:5}
-]
+<pre>{HurtTime:8s}</pre>
 
-/give @p minecraft:netherite_sword[minecraft:custom_name=[{"text":"Espada del Vacío",color:"dark_red","bold":true, obfuscated:true}], minecraft:enchantments={sharpness:10,sweeping_edge:10,unbreaking:10}]
+## Componentes de ítems
 
-Negar atributos:
+<pre>minecraft:death_protection={}</pre>
 
-/give @p minecraft:totem_of_undying[!minecraft:death_protection]
-</p>
+<pre>minecraft:enchantments={sharpness:255}</pre>
+
+<pre>minecraft:diamond_sword[minecraft:enchantments={sharpness:5}]</pre>
+
+Comando para bloque. Para ejecutarlo desde el chat del juego, añade `/`:
+
+<pre>give @p minecraft:netherite_sword[minecraft:custom_name=[{"text":"Espada del Vacío",color:"dark_red","bold":true,obfuscated:true}],minecraft:enchantments={sharpness:10,sweeping_edge:10,unbreaking:10}]</pre>
+
+Eliminar un componente del objeto entregado, también desde un bloque:
+
+<pre>give @p minecraft:totem_of_undying[!minecraft:death_protection]</pre>
 
 # Convenciones del Proyecto
 
@@ -92,6 +90,10 @@ Negar atributos:
 <li>Usar siempre Tags únicos (boss_guardian, boss_colossus, etc.).</li>
 <li>Aplicar atributos con /attribute y equipamiento con /item replace en bloques separados.</li>
 <li>Mantener el /summon lo más limpio posible.</li>
+<li>Presentar un comando por bloque copiable y en una sola línea. Los fragmentos con puntos suspensivos son esquemas, no comandos ejecutables.</li>
+<li>Omitir la barra inicial en ejemplos para bloques; añadirla para el chat del juego.</li>
+<li>En SNBT, usar cadenas con comillas dobles cuando no sea necesario escapar su contenido. Mantener las mayúsculas exactas de los campos y los tipos numéricos.</li>
+<li>Asignar poderes con NOMBRE_JUGADOR, sustituido por el nombre real antes de ejecutar.</li>
 </ul>
 
 # minecraft:max_health
@@ -100,9 +102,9 @@ Estado
 
 ✔ Verificado
 
-Comando
+Esquema incompleto, no ejecutable (la barra indica uso desde el chat del juego):
 
-/attribute ...
+<pre>/attribute ...</pre>
 
 Resultado
 
@@ -112,7 +114,9 @@ Notas
 
 Debe ejecutarse después
 
-/data merge entity ... {Health:100f}
+<pre>/data merge entity ... {Health:100f}</pre>
+
+Este es otro esquema: sustituye el selector antes de ejecutarlo.
 
 para rellenar la vida.
 
@@ -152,7 +156,9 @@ El zombie NO lo utiliza.
 
 # MainHand
 
-/item replace entity ...
+Esquema incompleto para el chat del juego; falta el destinatario, la ranura y el objeto:
+
+<pre>/item replace entity ...</pre>
 
 ---
 
@@ -225,45 +231,6 @@ Resultado
 
 
 
-Legendarios
-
-Artefactos
-
-Reliquias
-
-Llaves
-
-Objetos de misión
-
-Objetos permanentes
-
-
-
-
-
-# Enderman
-
-...
-
----
-
-Wither
-
-...
-
----
-
-Lightning
-
-...
-
----
-
-Custom Ambient
-
-...
-
-
 Color
 
 Bold
@@ -314,7 +281,7 @@ execute positioned
 
 ejemplo:
 
-execute positioned -5 -24 12 run gamemode adventure @a[gamemode=survival, distance=..7]
+<pre>execute positioned -5 -24 12 run gamemode adventure @a[gamemode=survival, distance=..7]</pre>
 
 ---
 
@@ -370,55 +337,6 @@ Attribute
 Data Merge
 
 Data Modify
-
-
-LAB-001
-
-Atributos
-
-Resultado
-
-✔
-
-Conclusiones
-
-...
-
----
-
-LAB-002
-
-Componentes
-
-Resultado
-
-✔
-
-...
-
----
-
-LAB-003
-
-Bosses
-
-...
-
----
-
-LAB-004
-
-Execute
-
-...
-
----
-
-LAB-005
-
-IA
-
-...
 
 
 ## Documentación
