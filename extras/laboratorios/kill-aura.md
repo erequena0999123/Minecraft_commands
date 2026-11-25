@@ -6,13 +6,15 @@
 
 ### Ampliación a 35 tipos hostiles y resultado del filtro
 
+**Resultado confirmado por el autor.** El aura atacó a esqueletos, zombis, creepers y al Warden. Los cerdos y aldeanos quedaron ilesos. El autor da por cerrado el filtro con esta muestra. Las demás especies de la lista comparten el mismo criterio de selección por identificador y carecen de una prueba individual registrada.
+
 El 16 de noviembre de 2026 el autor confirmó que el circuito funciona con radio 5 y que lo probó con criaturas pacíficas sin afectarlas. Mencionó corregir 15 a 5 en su montaje; la ficha local ya indicaba 5 y se conserva ese valor. La versión exacta y el número de jugadores de la prueba no se especificaron.
 
 Después pidió incluir todos los tipos hostiles, superando la lista inicial limitada. Se consultó al chat Comandos Minecraft Java y se amplió únicamente el array del comando 2 a 35 tipos. No cambian los otros comandos, el radio, el daño, el temporizador, los cuatro bloques ni el aviso estático.
 
 Lista vigente: `blaze`, `bogged`, `breeze`, `creaking`, `creeper`, `drowned`, `elder_guardian`, `ender_dragon`, `endermite`, `evoker`, `ghast`, `guardian`, `hoglin`, `husk`, `illusioner`, `magma_cube`, `parched`, `phantom`, `piglin_brute`, `pillager`, `ravager`, `shulker`, `silverfish`, `skeleton`, `slime`, `stray`, `vex`, `vindicator`, `warden`, `witch`, `wither`, `wither_skeleton`, `zoglin`, `zombie`, `zombie_villager`.
 
-La revisión documental no encontró otro tipo hostil que añadir conforme al criterio de excluir tipos neutrales y monturas situacionales. No se afirma haber auditado directamente el registro binario completo de Minecraft. Los 21 tipos añadidos aún no se consideran probados por el usuario; su confirmación corresponde al circuito con la lista anterior.
+La revisión documental no encontró otro tipo hostil que añadir conforme al criterio de excluir tipos neutrales y monturas situacionales. No se afirma haber auditado directamente el registro binario completo de Minecraft.
 
 #### Clasificación y casos especiales
 
@@ -47,7 +49,7 @@ Se conservaron intactos todos los demás comandos: aviso estático, temporizador
 
 Java 26.3, estable verificada por el chat de comandos el 16 de noviembre de 2026. La fuente oficial de [1.20.5](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-20-5) documenta predicados inline sin archivo y listas de tipos. [Java 26.2](https://www.minecraft.net/en-us/article/minecraft-java-edition-26-2) cambia el campo de tipo de entidad a minecraft:entity_type. [Java 26.3](https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3) cambia condition a type para los predicados. La secuencia usa los nombres actuales, no la combinación antigua condition/predicate.type. La verificación documental no sustituye la prueba del circuito.
 
-#### Prueba pendiente
+#### Plan de pruebas del filtro inicial (histórico)
 
 - Colocar un objeto tirado y un animal más cerca que un zombi: comprobar que el daño sigue seleccionando al zombi.
 - Comprobar un marco, un aldeano, un caballo y un jugador sin criaturas permitidas cerca: ninguno debe ser elegido.
@@ -69,9 +71,9 @@ Registrar versión exacta, configuración y resultados del usuario. Si el comand
 
 - Implementación original presentada como terminada según las pruebas históricas del autor.
 - El objeto del código es `minecraft:skeleton_skull`; el recuerdo verbal de una calavera de Wither Skeleton no autoriza a cambiarlo.
-- Pendiente: limpieza de calaveras marcadas en inventario y suelo. No se ha confirmado una prueba específica nueva de esta limpieza.
-- Filtro inicial de 14 tipos: el autor confirmó posteriormente que funciona a 5 bloques y no afecta a las criaturas pacíficas de su prueba. Lista ampliada después a 35; las incorporaciones nuevas siguen pendientes de prueba individual.
-- El lore de la entrega contiene texto del reloj de otro poder; se conserva para una revisión del código por separado.
+- **Limpieza confirmada en Minecraft.** El autor ratificó la prueba del circuito. Al retirar el poder, la calavera marcada desaparece del inventario y las calaveras ajenas al poder se conservan.
+- Filtro inicial de 14 tipos: el autor confirmó posteriormente que funciona a 5 bloques y no afecta a las criaturas pacíficas de su prueba. Lista ampliada después a 35; el resultado por especie figura al principio del laboratorio.
+- **Presentación aprobada en Minecraft.** El autor verificó el nombre legible con los adornos ofuscados, las instrucciones de uso y la historia propia de la calavera. [Ficha de Kill Aura](../../examples/superpowers/kill-aura.md)
 
 La versión exacta ejecutada, el número de jugadores y otras condiciones no indicadas por el autor permanecen sin registrar. Una comprobación documental o una prueba de otro poder no acredita estas condiciones.
 
@@ -82,11 +84,11 @@ Archivo de las explicaciones anteriores, conservadas para consultar el origen de
 
 Estado de desarrollo: terminado según las pruebas históricas del autor. La versión exacta de esas pruebas no está registrada en esta ficha; la compatibilidad con una versión estable posterior se revisa por separado.
 
-Estado: limpieza de inventario de perlas confirmada por el autor al mantener la señal permanente, incluidas perlas recogidas de cofres y del suelo. Esa prueba no valida calaveras, bolas de nieve ni la nueva eliminación directa de entidades, que siguen pendientes de prueba.
+En esa etapa se había comprobado la limpieza de perlas al mantener la señal permanente. El resultado vigente de la calavera figura en «Resultados y decisiones».
 
 Referencia documental: Java 26.3, estable consultada el 16 de noviembre de 2026 en el [índice oficial](https://feedback.minecraft.net/hc/en-us/sections/360001186971-Release-Changelogs). [Sintaxis oficial de custom_data, predicados y slot contents](https://www.minecraft.net/en-us/article/minecraft-java-edition-1-20-5).
 
-La entrega de calaveras está limitada a jugadores con `aura_dmg` que no tengan una en la barra rápida. El comando de entrega aún conserva dentro de su texto el lore del reloj del poder anterior; ese fragmento se mantiene intacto para revisar por separado cualquier cambio al código.
+En un montaje anterior, el comando de entrega de Kill Aura todavía incluía una descripción tomada del reloj de Doctor Strange. La ficha vigente contiene el nombre y el lore aprobados para la calavera.
 
 - La ficha histórica describe 3 minutos y 20 segundos de actividad y 1 minuto de recarga. La duración real depende de la frecuencia y orden de los bloques.
 

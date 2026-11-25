@@ -40,7 +40,9 @@ Sustituye `NOMBRE_JUGADOR` por el nombre exacto del jugador que recibirá el pod
 
 <strong>cadena-necesita redstone</strong>
 
-<pre>give @a[tag=volar] minecraft:elytra[minecraft:custom_data={poder:"volar"},minecraft:unbreakable={}, minecraft:enchantments={protection:10},minecraft:attribute_modifiers=[{id:"poderes:volar_vida",type:"minecraft:max_health",amount:12,operation:"add_value",slot:"chest"}]] 1</pre>
+<pre>give @a[tag=volar] minecraft:elytra[minecraft:custom_data={poder:"volar"},minecraft:custom_name={"text":"","color":"aqua","italic":false,"extra":[{"text":"X","obfuscated":true},{"text":" Alas del Vendaval "},{"text":"X","obfuscated":true}]},minecraft:lore=[{"text":"Uso","color":"gold","bold":true,"italic":false},{"text":"Equípalas en el pecho. Pulsa salto en el aire para planear.","color":"white","italic":false},{"text":"Usa un cohete mientras planeas para tomar impulso.","color":"white","italic":false},{"text":""},{"text":"Una tejedora cosió viento de tormenta a estas alas.","color":"gray","italic":true},{"text":"Al desplegarlas, el vendaval vuelve a soplar.","color":"gray","italic":true}],minecraft:unbreakable={}, minecraft:enchantments={protection:10},minecraft:attribute_modifiers=[{id:"poderes:volar_vida",type:"minecraft:max_health",amount:12,operation:"add_value",slot:"chest"}]] 1</pre>
+
+El autor probó en Minecraft la presentación de «Alas del Vendaval» y aprobó el nombre con adornos ofuscados, las instrucciones de uso y la historia del objeto.
 
 <strong>cadena-siempre activo</strong>
 

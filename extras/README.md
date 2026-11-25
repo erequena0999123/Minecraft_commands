@@ -1,13 +1,10 @@
 # Extras
 
-Apuntes complementarios conservados para desarrollo futuro. Se mantienen separados de las fichas de bosses y poderes que ya contienen implementaciones.
-
-- [Objetos especiales](objetos-especiales.md): categorías de objetos previstas.
-- [Sonidos](sonidos.md): ideas para efectos sonoros.
-- [Laboratorios](laboratorios.md): resultados y decisiones por poder.
-
-- [Ampliaciones pendientes](ampliaciones-pendientes.md): poderes por recuperar y mejoras por evaluar.
-
-Las [partículas](../examples/particles/soul_fire.md) y los [componentes de ítems](../docs/Componentes_Items.md) conservan sus documentos actuales.
+1. [Zonas y lobbies](utilidades-para-mundos/zonas-y-lobbies/README.md). Configura la protección por distancia y un punto de inicio interactivo.
+2. [Catálogo de partículas](../examples/particles/README.md). Consulta los parámetros de emisión y el diseño visual de Particulas.
+3. [Objetos especiales](objetos-especiales.md). Categorías de objetos previstas para futuras fichas.
+4. [Sonidos](sonidos.md). Ideas para señales y efectos sonoros.
+5. [Laboratorios](laboratorios.md). Pruebas, resultados y decisiones por elementos utilizados.
+6. [Ampliaciones pendientes](ampliaciones-pendientes.md). Ideas para ampliar o recuperar mecánicas del manual.
 
 [Volver al índice principal](../README.md)

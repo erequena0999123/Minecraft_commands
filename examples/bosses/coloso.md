@@ -26,9 +26,15 @@ Husk gigante orientado a resistir y distraer, con 800 de vida y escala 3. Usa ar
 
 La dureza aplicada es 20. El antiguo texto «Resistencia 12» no coincidía con el comando. No hay un efecto Resistance en esta secuencia ni una equivalencia establecida con la resistencia efectiva de otros bosses.
 
-## Montaje
+## Cómo montarlo
 
-La invocación usa la posición absoluta `15 60 -15` y después `~ ~1 ~`, configuración del mundo original. Los pasos siguientes seleccionan por tag y cercanía; conservar su orden y configuración de bloques.
+Cambia la posición de ejemplo `15 60 -15` por el punto de tu mundo. El husk aparece un bloque por encima. Tras el impulso de invocación, activa el impulso de escala y sigue la cadena: configura primero los 800 puntos de vida y después los atributos, el efecto y las cuatro piezas de armadura.
+
+Copia un comando por bloque siguiendo el orden de abajo. Para la configuración usa un solo ejemplar con la etiqueta de esta ficha: los selectores con `limit=1,sort=nearest` eligen el más cercano a cada bloque. Consulta la [preparación del equipo bosses](README.md#preparación-del-equipo-bosses) antes de usar `team join`.
+
+## Qué comprobar
+
+Se reconoce por su tamaño triple, la armadura completa y las manos sin arma asignada. Para interpretar su aguante, distingue la armadura base de 30, la dureza de 20 y los encantamientos de sus piezas.
 
 Estado de desarrollo: terminado según las pruebas históricas del autor. La versión exacta de esas pruebas no está registrada en esta ficha; la compatibilidad con una versión estable posterior se revisa por separado.
 
@@ -63,7 +69,7 @@ Estado de desarrollo: terminado según las pruebas históricas del autor. La ver
 
 <pre>effect give @e[tag=boss_colossus,limit=1,sort=nearest] minecraft:fire_resistance infinite 0 true</pre>
 
-<strong> Equipo </strong>
+**Equipamiento**
 
 <pre>item replace entity @e[tag=boss_colossus,limit=1,sort=nearest] armor.head with minecraft:netherite_helmet[minecraft:enchantments={protection:10,unbreaking:5}]</pre>
 
@@ -72,6 +78,8 @@ Estado de desarrollo: terminado según las pruebas históricas del autor. La ver
 <pre>item replace entity @e[tag=boss_colossus,limit=1,sort=nearest] armor.legs with minecraft:netherite_leggings[minecraft:enchantments={protection:10,unbreaking:5}]</pre>
 
 <pre>item replace entity @e[tag=boss_colossus,limit=1,sort=nearest] armor.feet with minecraft:netherite_boots[minecraft:enchantments={protection:10,feather_falling:20,unbreaking:5}]</pre>
+
+**Pertenencia al equipo**
 
 <pre>team join bosses @e[tag=boss_colossus]</pre>
 

@@ -27,9 +27,15 @@ Zombie de combate cercano, ampliado a escala 2.4 y equipado con espada y armadur
 
 La cifra 12 corresponde a `armor_toughness`, no a un efecto Resistance. El valor base de armor y el equipo se documentan por separado; la ficha no calcula una reducción final de daño. Soul Fire era una idea visual de la ficha anterior: no hay un comando de partículas en esta secuencia.
 
-## Montaje
+## Cómo montarlo
 
-Invocación relativa a la posición de ejecución. La secuencia selecciona una entidad mediante tag, cercanía y límite de una; los comandos de equipo `bosses` están en las notas al final. Conservar la configuración de bloques indicada en cada paso.
+Elige el punto del bloque de impulso: el zombi aparece un bloque por encima. Activa después el segundo impulso de escala y continúa por la cadena. Primero se fija la vida máxima y después se llena la vida actual. Al final se colocan la espada y las cuatro piezas de armadura.
+
+Copia un comando por bloque siguiendo el orden de abajo. Para la configuración usa un solo ejemplar con la etiqueta de esta ficha: los selectores con `limit=1,sort=nearest` eligen el más cercano a cada bloque. Consulta la [preparación del equipo bosses](README.md#preparación-del-equipo-bosses) antes de usar `team join`.
+
+## Qué comprobar
+
+Debe aparecer «El General del Vacío» a escala 2.4, con espada y armadura completa. En combate cercano combina el atributo de empuje con el arma. Los 450 puntos de vida son independientes de la protección del equipo.
 
 Estado de desarrollo: terminado según las pruebas históricas del autor. La versión exacta de esas pruebas no está registrada en esta ficha; la compatibilidad con una versión estable posterior se revisa por separado.
 
@@ -66,7 +72,7 @@ Estado de desarrollo: terminado según las pruebas históricas del autor. La ver
 
 <pre>effect give @e[tag=boss_void_general,limit=1,sort=nearest] minecraft:fire_resistance infinite 0 true</pre>
 
-Aplicacion de armadura al boss:
+**Espada y armadura**
 
 <pre>item replace entity @e[tag=boss_void_general,limit=1,sort=nearest] weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={sharpness:7,sweeping_edge:5,fire_aspect:2,unbreaking:5}]</pre>
 
@@ -81,24 +87,20 @@ Aplicacion de armadura al boss:
 
 ---
 
-### Notas
+### Equipo compartido
 
-Si deseas evitar que se golpeen entre multiples bosses coloca comandos de team, por ejemplo:
+Crea el equipo una vez en cada mundo.
 
 <strong>impulso-necesita redstone</strong>
 <pre>team add bosses</pre>
 
 
-Y si deseas agregar un boss al equipo le colocas al final de la secuencia un bloque de:
+Elige la línea que corresponda al boss que quieras incorporar. Cada selector alcanza a todos los ejemplares cargados con esa etiqueta.
 
 <strong>cadena-siempre activo</strong>
 <pre>team join bosses @e[tag=boss_void_general]</pre>
 <pre>team join bosses @e[tag=boss_colossus]</pre>
 <pre>team join bosses @e[tag=boss_hunter]</pre>
 <pre>team join bosses @e[tag=boss_necromancer]</pre>
-
-
-
-
 
 [Volver a bosses](README.md)

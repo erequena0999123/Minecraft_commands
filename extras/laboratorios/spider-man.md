@@ -2,6 +2,18 @@
 
 [Ficha y comandos](../../examples/superpowers/spider-man.md) · [Volver a laboratorios](../laboratorios.md)
 
+## Resultado vigente: quién puede lanzar telarañas
+
+| Lanzador | Bola lanzada | Resultado observado |
+|---|---|---|
+| Portador de Spider-Man | Especial, marcada por el poder | Generó telarañas. |
+| El mismo portador | Normal | No generó telarañas. |
+| Otro jugador sin el poder, con un portador activo | Normal | No generó telarañas. |
+
+El circuito comprueba primero la marca del proyectil y después la etiqueta `spider_man` de quien lo lanzó. Además, la limpieza retira las bolas especiales del inventario de quienes carecen de la etiqueta. Un lanzamiento efectivo de una bola marcada por alguien sin el poder queda descrito por la lógica del comando; la prueba multijugador reportada fue con una bola normal.
+
+La movilidad en las redes y la trayectoria desde el portador ya fueron aprobadas. Los apartados de pruebas que siguen documentan las etapas del desarrollo. La [ficha del poder](../../examples/superpowers/spider-man.md) reúne los comandos vigentes.
+
 ## Decisión vigente: escalada sin salto obligatorio, integrada
 
 El usuario cambió la preferencia de inicio: elige conservar la versión anterior a la propuesta OnGround, con escalada al acercarse y salto opcional. Se descarta el control de suelo como requisito. No se registra que haya probado la propuesta OnGround; se conserva como alternativa histórica sin integrar.

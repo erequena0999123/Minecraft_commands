@@ -24,9 +24,15 @@ El valor 20 identifica el atributo asignado, no una medición del daño de todos
 - Nombre «El Nigromante» en morado oscuro, visible; PersistenceRequired true.
 - Se incorpora al equipo `bosses`, que debe existir previamente.
 
-## Montaje
+## Cómo montarlo
 
-La invocación conserva las coordenadas del mundo original `-15 61 19`, seguidas de `~ ~1 ~`. El bloque del aura está marcado como repetición y necesita redstone; su activación se distingue de la cadena de configuración del boss.
+Cambia la posición de ejemplo `-15 61 19`; el evoker aparece un bloque por encima. Activa el segundo impulso para la escala y continúa con la cadena de vida, atributos y resistencia al fuego. Instala aparte el bloque de repetición del aura con su propia señal.
+
+Copia un comando por bloque siguiendo el orden de abajo. Para la configuración usa un solo ejemplar con la etiqueta de esta ficha: los selectores con `limit=1,sort=nearest` eligen el más cercano a cada bloque. Consulta la [preparación del equipo bosses](README.md#preparación-del-equipo-bosses) antes de usar `team join`.
+
+## Qué comprobar
+
+Con la señal del aura apagada, el evoker conserva su configuración inicial. Al encenderla, cada entidad con `aura_dmg_boss` intenta dañar al jugador más cercano dentro de cinco bloques. Puedes comprobar ese cambio sin volver a invocar al boss.
 
 Estado de desarrollo: terminado según las pruebas históricas del autor. La versión exacta de esas pruebas no está registrada en esta ficha; la compatibilidad con una versión estable posterior se revisa por separado.
 
@@ -61,7 +67,7 @@ Estado de desarrollo: terminado según las pruebas históricas del autor. La ver
 <pre>execute at @e[tag=aura_dmg_boss] run damage @n[type=minecraft:player, distance=..5] 2 minecraft:indirect_magic</pre>
 
 
-<strong> Equipo </strong>
+**Pertenencia al equipo**
 
 <pre>team join bosses @e[tag=boss_necromancer]</pre>
 

@@ -9,10 +9,14 @@ Este registro reúne ideas y material por recuperar. Ninguna entrada de esta pá
 
 - **Teletransportación:** comandos recuperados e incorporados a la [ficha de Teletransportación](../examples/superpowers/teletransportacion.md). El autor indica que es el último poder disponible de su recopilación actual.
 
+## Mejoras incorporadas
+
+- **Kill Aura.** Filtro de 35 tipos hostiles implementado. El autor confirmó el comportamiento con cuatro especies hostiles y dos pacíficas. [Resultados del laboratorio](laboratorios/kill-aura.md)
+
+- **Spider-Man.** Movilidad en las redes aprobada. Solo el portador genera telarañas con la bola marcada. También se comprobó que la bola normal de otro jugador no genera redes mientras el poder está activo. [Resultados del laboratorio](laboratorios/spider-man.md)
+
 ## Mejoras por evaluar
 
-- **Kill aura contra mobs hostiles:** estudiar un filtro de objetivos para excluir jugadores y criaturas pacíficas. Presentar la propuesta y probarla antes de sustituir el selector actual.
-- **Spider-Man:** revisar el comportamiento de las bolas de nieve con varios jugadores y posibles formas de evitar que el portador quede atrapado en sus propias telarañas. Conservar entretanto la implementación existente.
 - **Teletransportación:** el autor comprobó que la regeneración puede agotarse antes de una llegada lejana y decidió conservar sus dos segundos. Ver [resultados y pruebas pendientes](laboratorios/teletransportacion.md).
 - **Nubes y partículas:** incorporarlas únicamente cuando una habilidad concreta las necesite; evitar campos vacíos en todas las fichas.
 - **Nuevos bosses y poderes:** definir primero la habilidad deseada y sus límites vanilla, y documentar los comandos cuando exista una implementación.
