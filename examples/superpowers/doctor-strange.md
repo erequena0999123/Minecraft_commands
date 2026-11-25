@@ -71,7 +71,9 @@ El mensaje «Doctor Strange listo para usar» aparece una vez sobre la barra rá
 #### Dar Reloj:
 
 <strong>repetición-necesita redstone</strong>
-<pre>execute as @a[tag=doctor_strange] unless items entity @s hotbar.* minecraft:clock[minecraft:custom_data~{poder:"doctor_strange"}] run give @s minecraft:clock[minecraft:custom_data={poder:"doctor_strange"},minecraft:custom_name=[{text:"Reloj del Tiempo", color:"blue", lore:[[{"text":"El Reloj que controla el tiempo","italic":true}]], obfuscated:true}]]</pre>
+<pre>execute as @a[tag=doctor_strange] unless items entity @s hotbar.* minecraft:clock[minecraft:custom_data~{poder:"doctor_strange"}] run give @s minecraft:clock[minecraft:custom_data={poder:"doctor_strange"},minecraft:custom_name={"text":"","color":"blue","italic":false,"extra":[{"text":"X","obfuscated":true},{"text":" Reloj del Tiempo "},{"text":"X","obfuscated":true}]},minecraft:lore=[{"text":"Uso","color":"gold","bold":true,"italic":false},{"text":"Sostén el reloj en la mano principal.","color":"white","italic":false},{"text":"Al estar listo, paraliza a las criaturas cercanas.","color":"white","italic":false},{"text":""},{"text":"Un relojero atrapó un instante entre sus agujas.","color":"gray","italic":true},{"text":"Al liberarlo, todo ser cercano queda inmóvil.","color":"gray","italic":true}]]</pre>
+
+El autor probó en Minecraft la presentación de «Reloj del Tiempo» y aprobó el nombre con adornos ofuscados, las instrucciones de uso y la historia del objeto.
 
 #### Paralizar y restaurar criaturas en las tres dimensiones:
 

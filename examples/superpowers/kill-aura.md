@@ -2,6 +2,8 @@
 
 Poder de daño cercano para jugadores con `aura_dmg`, activado mediante una calavera de esqueleto en la mano principal.
 
+El autor verificó en el juego la presentación final de la calavera: nombre legible con adornos ofuscados en ambos extremos, «Uso» en dorado y negrita, instrucciones blancas e historia gris en cursiva.
+
 ## Activación y temporizador
 
 - La instalación crea `tiempo_aura` y lo inicia en cero para los jugadores con el tag.
@@ -83,7 +85,7 @@ El mensaje multicolor aparece una vez sobre la barra rápida al terminar cada co
 #### Dar Calavera
 
 <strong>repetición-necesita redstone</strong>
-<pre>execute as @a[tag=aura_dmg] unless items entity @s hotbar.* minecraft:skeleton_skull[minecraft:custom_data~{poder:"kill_aura"}] run give @s minecraft:skeleton_skull[minecraft:custom_data={poder:"kill_aura"},minecraft:custom_name=[{text:"Kill aura", color:"red", lore:[[{"text":"El Reloj que controla el tiempo","italic":true}]], obfuscated:true}]]</pre>
+<pre>execute as @a[tag=aura_dmg] unless items entity @s hotbar.* minecraft:skeleton_skull[minecraft:custom_data~{poder:"kill_aura"}] run give @s minecraft:skeleton_skull[minecraft:custom_data={poder:"kill_aura"},minecraft:custom_name={"text":"","color":"red","italic":false,"extra":[{"text":"X","obfuscated":true},{"text":" Kill Aura "},{"text":"X","obfuscated":true}]},minecraft:lore=[{"text":"Uso","color":"gold","bold":true,"italic":false},{"text":"Sostén la calavera en la mano principal.","color":"white","italic":false},{"text":"El aura se activa cuando está lista.","color":"white","italic":false},{"text":""},{"text":"Una hechicera selló un guardián en el hueso.","color":"gray","italic":true},{"text":"Su espíritu hiere a los monstruos que se acercan.","color":"gray","italic":true}]]</pre>
 
 #### Uso de la habilidad
 
@@ -134,5 +136,7 @@ Mantén cargada la zona. Todas las cadenas son incondicionales. Puedes usar repe
 La limpieza alcanza inventarios de jugadores conectados sin el tag y objetos marcados tirados en zonas cargadas de las tres dimensiones, aunque su dueño conserve el poder. No elimina proyectiles lanzados.
 
 Solo se eliminan las copias marcadas. Los cofres y el contenido de contenedores portátiles quedan fuera; al recoger una copia sin tener el tag, se limpia del inventario. Los productos fabricados no se detectan.
+
+**Probado en Minecraft.** Al perder el poder, el autor comprobó que se retira del inventario la calavera marcada y que conserva las calaveras ajenas al poder.
 
 [Pruebas y decisiones](../../extras/laboratorios/kill-aura.md) · [Volver a superpoderes](README.md)

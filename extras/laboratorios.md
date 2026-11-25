@@ -1,6 +1,6 @@
 # Laboratorios
 
-Pruebas, resultados y decisiones de diseño. Cada poder tiene un registro separado de su ficha de uso.
+Resultados de pruebas en Minecraft y decisiones de diseño. Consulta las fichas de uso para montar los circuitos.
 
 ## Laboratorios de superpoderes
 
@@ -10,5 +10,9 @@ Pruebas, resultados y decisiones de diseño. Cada poder tiene un registro separa
 - [Kill aura](laboratorios/kill-aura.md)
 - [Flash](laboratorios/flash.md)
 - [Doctor Strange](laboratorios/doctor-strange.md)
+
+## Laboratorios de utilidades para mundos
+
+- [Zonas y lobbies](laboratorios/lobby.md)
 
 [Volver a extras](README.md)

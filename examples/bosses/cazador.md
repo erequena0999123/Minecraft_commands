@@ -25,9 +25,15 @@ El valor 20 es el atributo attack_damage asignado; no se presenta como medición
 - Nombre «El Cazador» en aguamarina oscura, visible; PersistenceRequired true.
 - Se incorpora al equipo `bosses`, que debe existir previamente.
 
-## Montaje
+## Cómo montarlo
 
-La invocación conserva las coordenadas del mundo original `18 59 14`, seguidas de `~ ~1 ~`. Los pasos de atributos y equipo seleccionan por tag y cercanía.
+Adapta la posición de ejemplo `18 59 14`; el stray aparece un bloque por encima. Activa el impulso de escala después de invocarlo. La cadena fija su vida máxima en 200, llena esa vida y aplica los atributos antes de equipar el arco y el peto.
+
+Copia un comando por bloque siguiendo el orden de abajo. Para la configuración usa un solo ejemplar con la etiqueta de esta ficha: los selectores con `limit=1,sort=nearest` eligen el más cercano a cada bloque. Consulta la [preparación del equipo bosses](README.md#preparación-del-equipo-bosses) antes de usar `team join`.
+
+## Qué comprobar
+
+Al terminar verás «El Cazador» a escala 1.6 con el arco en la mano y un peto de diamante. Su ataque a distancia depende del arco encantado; el 20 de la tabla corresponde al atributo de ataque del mob.
 
 Estado de desarrollo: terminado según las pruebas históricas del autor. La versión exacta de esas pruebas no está registrada en esta ficha; la compatibilidad con una versión estable posterior se revisa por separado.
 
@@ -58,11 +64,13 @@ Estado de desarrollo: terminado según las pruebas históricas del autor. La ver
 
 <pre>effect give @e[tag=boss_hunter,limit=1,sort=nearest] minecraft:fire_resistance infinite 0 true</pre>
 
-<strong> Equipo </strong>
+**Equipamiento**
 
 <pre>item replace entity @e[tag=boss_hunter,limit=1,sort=nearest] weapon.mainhand with minecraft:bow[minecraft:enchantments={power:100,punch:2,flame:1,unbreaking:5}]</pre>
 
 <pre>item replace entity @e[tag=boss_hunter,limit=1,sort=nearest] armor.chest with minecraft:diamond_chestplate[minecraft:enchantments={protection:10,unbreaking:5}]</pre>
+
+**Pertenencia al equipo**
 
 <pre>team join bosses @e[tag=boss_hunter]</pre>
 
